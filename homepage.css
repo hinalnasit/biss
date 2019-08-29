@@ -1,0 +1,1740 @@
+body
+{
+	margin:0;
+}
+.maindiv
+{
+  background-image: url("book.jpg");
+  padding-bottom: 400px;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+#img
+{
+	width: 100%;
+}
+.header
+{
+	width: 100%;
+}
+.name
+{
+	font-size: 70px;
+	font-family: Berlin Sans FB;
+	display: inline-block;
+	float: left;
+	width: 33%;
+}
+.menu > ul
+{
+	list-style-type: none;
+	  overflow: hidden;
+	  padding-left: 0; 
+	  font-size: 28px;
+	  font-family: Berlin Sans FB;
+	  margin-bottom: 0;
+}
+.menu li
+{
+	display: inline;
+	float: left;
+}
+.menu li a
+{
+	  display: block;
+	  color: rgb(19, 79, 81);
+	  text-align: center;
+	  padding-top: 30px;
+	  padding-bottom: 30px;
+	  padding-right: 20px;
+	  padding-left: 20px;
+	  text-decoration: none;
+	  clear: right;
+}
+
+#toggle
+{
+	display: none;
+}
+label.toggle-class
+{
+	font-size: 30px;
+	margin:0 30px 0 0;
+	display: none;
+}
+.nav
+{
+	text-align: left;
+}
+.menu li:hover
+{
+	background-color: rgba(33,69,252,0.13);
+	text-decoration: none;
+} 
+.menu li:hover a
+{
+	color: rgb(122, 38, 22);
+}
+.btnquote
+{
+	width: 22%;
+	 margin-top: 2.7%; 
+	border-radius: 20px 20px; 
+	border-color: black;
+	background-color: #1474;
+	color: rgb(19, 79, 81);
+}
+.slider
+{
+	background-color:rgb(182, 182, 186);
+	margin-left: 35%;
+	margin-right: 35%;
+	color: rgb(19, 79, 81);
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-top: 14%;
+	text-align: center;
+	border-radius: 20px;
+	transition: 3s;
+	opacity: 0.9;
+	font-size: 50px;
+	font-family: Calibri;
+}
+.slider:hover
+{
+	background-color: rgb(54, 50, 49);
+	transition:all 0.5s;
+	color: white;
+	opacity: 1;
+}
+.start
+{
+	position: absolute;
+	background-color: rgb(122, 38, 22);
+	color: white;
+	font-size: 30px;
+	align-items: center;
+	border-radius: 30px;
+	margin-left: 43%;
+	margin-right: 43%;
+	margin-top: 4%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-left:1%;
+	padding-right: 1%;
+	font-family: Calibri;
+	border:solid 1px gray;	
+}
+.theme
+{
+	margin-top: 7%;
+	margin-bottom: 30px;
+}
+.theme-heading
+{
+	font-size: 40px;
+	margin-left: 10%;
+	padding-left: 30px;
+	color:black;
+	padding-bottom: 1%;
+	font-family: Calibri;
+	font-weight: bold;
+}
+.theme-line
+{
+	border:1px solid;
+	color: rgb(122, 38, 22);
+	width: 35%;
+	margin-left: 12%;
+	padding-left: 30px;
+}
+.theme-text
+{
+	font-size: 17px;
+	margin-top: 0.7%;
+	margin-bottom: 30px;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 30px;
+	text-align: justify;
+	color: #383838;
+	line-height: 1.4;
+	font-weight: normal;
+	font-family: Calibri;
+}
+.imgslider > ul
+{
+	position: relative;
+	width: 100%;
+	height: 600px;
+}
+
+/************************/
+
+.mobile-app-blog
+{
+	padding-bottom: 3%;
+	margin-top: 4%;
+}
+.mobile-app-heading
+{
+	margin-left: 10%;
+	padding-left: 30px;
+	font-weight: bold;
+	padding-bottom: 1%;
+	color:black;	
+	font-size: 40px;
+	font-family: Calibri;
+	margin-top: 7%;
+}
+.mobile-app-blog.mobileapp-line
+{
+	border:1px solid;
+	color: rgb(122, 38, 22);
+	width: 40%;
+	margin-left: 12%;
+	padding-left: 1%;
+}
+.mobile-app-content
+{
+	width: 33%;
+	padding-left:0;
+	font-size: 17px;
+	text-align: justify;
+	color: #383838;
+	margin-top: 2.5%;
+	margin-right: 10%;
+	font-family: Calibri;
+}
+.mobile-peragraph
+{
+	font-family: Calibri;
+	width: 85%;
+	padding-left:0;
+	font-size: 17px;
+	text-align: justify;
+	color: #383838;
+	margin-top: 2.5%;
+	margin-right: 5%;
+}
+.imgcon
+{
+	width: 100%;
+	padding-top: 2%;
+	display: flex;
+	justify-content:space-between;
+}
+.img 
+{
+	width:40%;
+	margin-left: 13%;
+	margin-top: 2.5%;
+	height: 400px;
+	width: 500px;
+	object-fit: cover;
+	position: relative;
+	/*padding-top:  20px;
+	margin-left: 10%;
+	padding-left: 30px;*/
+}
+.overly
+{
+	background-color: rgba(0,0,0,0.6);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	//transform: translateZ(36);
+	transition: all 0.5s;
+}
+.img:hover .overly
+{
+	opacity: 1;
+	/*background-color: rgba(0,0,0,0.6);*/
+}
+/*.img:hover
+{
+	background-color: red;
+	opacity: 0.5;
+	width:40%;
+	padding-top:  20px;
+	margin-left: 10%;
+	padding-left: 30px;
+}*/
+.mobile
+{
+	display:flex;
+	justify-content: right;
+	justify-content: space-between;
+	width: 100%;
+	margin-right: 10%;
+	
+}
+.mobileready
+{
+	width: 40%;
+	padding: 30px;
+	margin-left: 10%;
+	text-align: justify;
+	margin-top: 7%;
+	font-family: Calibri;
+}
+.travel
+{
+	width: 55%;
+	margin-right: 10%;
+}
+.mobileready-heading
+{
+	font-weight: bold;
+	font-size: 40px;
+	letter-spacing: 1.7px;
+}
+.edit
+{
+	font-size: 34px;
+	font-family:Roboto;
+	color: #444444;
+	letter-spacing: 1.7px;
+}
+.featuresdiv
+{
+	background-color: rgba(33,69,252,0.13);
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-top: 10%;
+}
+.features
+{
+	font-size: 45px;
+	font-family: Calibri;
+	padding-top: 2%;
+	color: rgb(20, 13, 13);
+	text-align: center;
+	font-weight: bold;
+}
+.uline
+{
+	border:2.5px solid;
+	color: rgb(99, 16, 16);
+	margin-left: 46%;
+	margin-right: 46%;
+	margin-top: 10px;
+}
+.fcontent
+{
+	margin: 3%;
+	text-align: center;
+	font-size: 17px;
+	font-family: Calibri;
+}
+.service
+{
+	width: 100%;
+	font-family: Calibri;
+	display: flex;
+	font-size: 17px;
+}
+.mobile-optimized
+{
+	width: 50%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-bottom: 6%;
+}
+.webdevelopment
+{
+	width: 50%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.imgcusmoerservice
+{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.imgstore
+{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:5%;
+}
+.imgservice
+{
+	width: 30%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.imgstunningtheme
+{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.staf-member
+{
+	width: 50%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.cusmoerservice
+{
+	width: 50%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.staf-content
+{
+	font-size: 17px;
+	padding: 3%;
+	text-align: justify;
+}
+.mobileopt
+{
+	font-size: 17px;
+	padding: 3%;
+	text-align: justify;	
+}
+.developer-content
+{
+	font-size: 17px;
+	padding: 3%;
+	text-align: justify;	
+}
+.cservice
+{
+	font-size: 100%;
+	padding: 3%;
+	text-align: justify;		
+}
+.footer
+{
+	background-color: black;
+	font-family: Calibri;
+	padding: 5%;
+}
+.footer-all-div
+{
+	display: flex;
+	justify-content: space-around;
+	color: white;
+}
+.footersitediv
+{
+	width: 20%;
+}
+.footre-items a
+{
+	color: white;
+	font-size: 15px;
+}
+.project-text
+{
+	font-size: 15px;
+}
+.footer-heading
+{
+	font-size: 20px;
+}
+/*******************************css of feature page***************************/
+
+.staff.maindiv
+{
+	background-image: url(" ");
+	padding-bottom: 0;
+}
+.staffheading
+{
+	background-image: url("bluecolor.jpeg");
+	background-size: cover;	
+	background-repeat: no-repeat;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	padding-left: 10%;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	font-family: Calibri;
+}
+.staff-text
+{
+	font-size: 17px;
+	padding: 5%;
+	text-align: justify;	
+	font-family: Calibri;
+}
+#points-how-to-hire ul li
+{
+	list-style: square;
+}
+.staff-benifits-heading
+{
+	font-size: 	30px;
+	color: black;
+	margin-top: 3%; 
+}
+#points-staff-benifits-heading ul
+{
+	margin-top: 2%;
+}
+#points-staff-benifits-heading ul li
+{
+	list-style: square;
+	font-size: 17px;
+}
+.image-of-staff
+{
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+/**-------------------------service page--------------------------------*/
+.service.maindiv
+{
+	background-image: url("");
+	padding-bottom: 0;
+}
+.softweredevlopment
+{
+	background-image: url("bluecolor.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	padding-bottom: 2.5%;
+	padding-top: 2.5%;
+	font-size: 50px;
+	padding-left: 10%;
+	font-family: Calibri;
+}
+.ProjectbasedSoftware
+{
+	font-size: 30px;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 3%;
+	margin-bottom: 1%;
+	font-family: Calibri;
+}
+.projectdescription
+{
+	display: flex;
+	justify-content: space-around;
+	margin-right: 20%;
+	margin-left: 3.5%;
+	font-family: Calibri;
+}
+.project-content
+{
+	padding-top: 2%;
+	width: 40%;
+	line-height: 1.8;
+	font-size: 17px;
+}
+#nav-1 ul.project-items li:hover
+{
+	background-color: white;
+}
+#nav-1 ul 
+{
+	background-color: white;
+}
+#nav-1 ul li
+{
+	font-size: 17px;
+	list-style-type: square;	
+}
+.project-image
+{
+	width: 25%;
+	padding-top: 5%;
+	margin-left: 0;
+}
+.Softwareteam
+{
+	font-size: 30px;
+	color: black;
+	margin-right:20%;
+	margin-left: 10%; 
+	margin-top: 5%;
+	margin-bottom: 1%;
+	font-family: Calibri;
+}
+.softwareline
+{
+	border:0.8px solid;
+	color: lightgray;
+	margin-left: 10%;
+	width: 60%;
+}
+.software-content
+{
+	width: 70%;
+	margin-right: 10%;
+	margin-left: 10%;
+	line-height: 1.7;
+	text-align: justify;
+	padding-top: 2%;
+	font-size: 17px;
+	font-family: Calibri;
+}
+.logo
+{
+	width: 50%;
+	padding-left: 15%;
+}
+.logocontent
+{
+	margin-right: 20%;
+	margin-left: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+.contentoflogo
+{
+	width: 35%;
+	margin-top: 5%;
+	font-family: Calibri;
+}
+#softwarebenifits ul
+{
+	background-color: white;
+	line-height: 1.8;
+}
+#softwarebenifits ul li
+{
+	font-size: 15px;
+	font-weight: normal;
+	list-style-type: square;
+}
+.heading-dedicated-developer
+{
+	margin-top: 5%;
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+	margin-right: 20%;
+	margin-left: 10%;
+	margin-bottom: 1%;
+	font-family: Calibri;
+}
+.dedicated-developer-content
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	line-height: 1.7;
+	margin-top: 1%;
+	font-family: Calibri;
+	font-size: 17px;
+}
+.Offshore-development
+{
+	margin-top: 1%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.offshore-developer-image
+{
+	width: 30%;
+	padding-left: 5%;
+}
+.offshore-developer-image:hover
+{
+	transform: scale(1.5);
+	transition: 3s;
+}
+.Offshore-developer-content
+{
+	width: 50%;
+	line-height: 1.7;
+	padding-left: 5%;
+	font-family: Calibri;
+	font-size: 17px;
+}
+.heading-specilize
+{
+	color: black;
+}
+.technology-prectise
+{
+	background-color: lightgray;
+	color: black;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+.softwareline.technology
+{
+	border-color: gray;
+	width: 18%;
+	margin-left: 41%;
+	margin-right: 41%;
+}
+.technology-heading
+{
+	padding-bottom: 1%;
+}
+#cyber-security
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+.technology-types
+{
+	display: flex;
+	justify-content: space-between;
+}
+#cyber-security ul
+{
+	font-style: Cambria;
+}
+#cyber-security ul li
+{
+	font-size: 20px;
+	font-weight: normal;
+	list-style-type: lower-norwegian;
+	text-align: left;
+	float: none;
+}
+.logo:hover
+{
+	transition:3s;
+	transform:translate(5%);
+}
+/*--------------------------about us page------------------*/
+.about.maindiv
+{
+	background-image: none;
+	padding-bottom: 0;
+}
+.heading-of-about
+{
+	font-size: 50px;
+	color: white;
+	font-family: Calibri;
+	font-weight: bold;
+	padding-left: 10%;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	background-image: url("bluecolor.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.about-content
+{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	font-family: Calibri;
+	line-height: 1.7;
+	font-size: 17px;
+}
+.team-heading
+{		
+	background-color: rgba(33,69,252,0.13);
+	padding-top:2.5%;
+	padding-bottom: 2.5%;
+	padding-left: 10%;
+	font-size: 40px;
+	color: black;
+	font-weight: bold;
+	font-family: Calibri;
+}
+.about-team
+{
+	display: flex;
+	font-size: 14px;
+	justify-content: space-between;
+}
+.team-description
+{
+	width:40%;
+	margin-top: 2.5%;
+	font-family: Calibri;
+	line-height: 1.7;
+	margin-left: 10%;
+	font-size: 17px;
+}
+.team-image
+{
+	width: 50%;
+	margin-top: 2%;
+	margin-left: 5%;
+}
+.images-of-team
+{
+	display: flex;
+	font-family: Calibri;
+	justify-content:space-around;
+}
+.why-different
+{
+	margin-left:10%;
+	margin-top: 2.5%;
+	line-height: 1.7;
+	margin-bottom: 2.5%;
+	font-size: 17px;
+	font-family: Calibri;
+}
+
+/*-----------------------------contact page----------------*/
+.contact.maindiv
+{
+	background-image: none;
+	padding-bottom: 0;
+}
+.contact-form
+{
+	font-family: Calibri;
+	font-size: 17px;
+}
+.contact-div
+{
+	background-image: url("bluecolor.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+.contact-heading
+{
+	color: white;
+	font-size: 50px;
+	padding-left: 10%;
+	padding-bottom: 2.5%;
+	padding-top: 2.5%;
+	font-family: Calibri;
+}
+.contact-detail
+{
+	background-color: lightgray;
+	padding-left: 15%;
+	font-family: Calibri;
+	padding-right: 15%;
+	padding-top: 2.5%;
+	margin-top: 2.5%; 
+	display: flex;
+	justify-content: space-between;
+}
+.address-first p
+{
+	font-size: 17px; 
+	color: black;
+}
+.contact-info .contact-email
+{	
+	font-size: 17px;
+	color: black;
+}
+.address-second-peragraph
+{
+	font-size: 17px;
+	color: black; 
+	margin-top: 45%;
+}
+.button
+{
+	font-size: 20px;
+	width: 20%;
+}
+/*-------------------------get a free quote --------------------------------*/
+.heading-of-quote
+{
+	background-image: url("bluecolor.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 50px;
+	color: white;
+	font-weight: bold;
+	padding-left: 10%;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	font-family: Calibri;
+}
+.abot-esstimate
+{
+	display: flex;
+	justify-content: space-between;
+	font-family: Calibri;
+}
+.image-of-esstimate
+{
+	margin: 5% 5% 5% 10%;
+}
+.content-of-esstimate
+{
+	margin: 5% 10% 5% 0;
+	text-align: justify;
+	padding-top: 3%;
+	line-height: 1.7;
+	font-size: 17px;
+}
+.you-will-get
+{
+	margin: 5% 10% 5% 10%;
+	font-family: Calibri;
+}
+.esstimate
+{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5%;
+	font-size: 17px;
+}
+.glyphicon.glyphicon-check
+{
+	font-size: 30px;
+}
+.glyphicon.glyphicon-record
+{
+	font-size: 30px;
+}
+.glyphicon.glyphicon-th
+{
+	font-size: 30px;
+}
+.glyphicon.glyphicon-screenshot
+{
+	font-size: 30px;
+}
+.glyphicon.glyphicon-move
+{
+	font-size: 30px;
+}
+.glyphicon.glyphicon-cog
+{
+	font-size: 30px;
+}
+.glyphicon.glyphicon-file
+{
+	font-size: 30px;
+}
+.glyphicon.glyphicon-modal-window
+{
+	font-size: 30px;
+}
+.project-requirement
+{
+	display: flex;
+	width: 15%;
+	line-height: 1.7;
+}
+.project-cost
+{
+	display: flex;
+	width: 15%;
+	line-height: 1.7;
+}
+.releases
+{
+	display: flex;
+	width: 15%;
+	line-height: 1.7;
+}
+.development-plan
+{
+	display: flex;
+	width: 15%;
+	line-height: 1.7;
+}
+.esstimate p
+{
+	margin-left: 10%;
+}
+.esstimate-week
+{
+	display: flex;
+	width: 15%;
+	line-height: 1.7;	
+}
+.stack
+{
+	display: flex;
+	width: 15%;
+	line-height: 1.7;
+}
+.report
+{
+	display: flex;
+	width: 15%;
+	line-height: 1.7;
+}
+.goals
+{
+	display: flex;
+	width: 15%;
+	line-height: 1.7;
+}
+/*------------------------essential inquiry form------------------------------*/
+.contact-info .fa {
+  padding-right: 5px;
+}
+
+#contact .form-control {
+  border: none;
+  border-bottom: 2px solid #f0f0f0;
+  border-radius: 0px;
+  box-shadow: none;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+#contact .form-control:focus {
+  border-bottom-color: #999999;
+}
+
+#contact input {
+ // height: 55px;
+}
+#contact input
+{
+	
+}
+input#valcheckother
+{
+	margin-left: 15.5%;
+}
+input#valcheckserver
+{
+	margin-left: 11.5%;
+}
+input#valcheckandroidapp
+{
+	margin-left: 10%;
+}
+#contact button#submit {
+  background: #2b2b2b;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  height: 50px;
+  margin-top: 24px;
+}
+#contact input[type="checkbox"]
+{
+	margin-top: 30px;
+}
+#contact input[type="radio"]
+{
+	margin-top: 30px;
+}
+#contact button#submit:hover {
+  background: #7682cc;
+  color: #ffffff;
+}
+.col-md-12.col-sm-6.formbudget
+{
+	font-size: 20px;
+}
+.checkbox-group-title
+{
+	font-size: 20px;
+	font-family: Calibri;
+	margin-top: 5%;
+}
+.col-md-12.col-sm-6.formbudget
+{
+	font-family: Calibri;
+	font-size: 20px;
+	margin-top: 5%;
+}
+.col-md-offset-8.col-md-4.col-sm-offset-6.col-sm-6.submitbtn
+{
+	margin-left: 30%;
+	margin-top: 5%;
+	margin-bottom: 	5%;
+}
+
+label[for="valcheckwebapp"]
+{
+	font-weight: normal;
+	font-size: 15px;
+	margin-left: 1%;
+}
+label[for="valcheckandroidapp"]
+{
+	font-weight: normal;
+	font-size: 15px;
+	margin-left: 1%;
+}
+label[for="valcheckiosapp"]
+{
+	font-weight: normal;
+	margin-left: 1%;
+	font-size: 15px;
+}
+label[for="valcheckserver"]
+{
+	font-weight: normal;
+	font-size: 15px;
+	margin-left: 1%;
+}
+label[for="valcheckQA"]
+{
+	font-weight: normal;
+	font-size: 15px;
+	margin-left: 1%;
+}
+label[for="valcheckother"]
+{
+	font-weight: normal;
+	font-size: 15px;
+	margin-left: 1%;
+}
+label[for="builtscratch"]
+{
+	font-weight: normal;
+	font-size: 15px;
+	margin-left: 2%;
+}
+label[for="continuedevelopment"]
+{
+	font-weight: normal;
+	font-size: 15px;
+	margin-left: 2%;
+}
+.form-of-class
+{
+	margin-left:auto;
+	font-family: Calibri;
+}
+.wow.fadeInUp.section-title
+{
+	margin-left: 16%;
+	margin-bottom: 4%;
+	font-family: Calibri;
+}
+/*------------------------responsive site--------------------------------*/
+@media only screen and (max-width: 500px)
+{
+	.name
+	{
+		font-size: 50px;
+	}
+	label.toggle-class
+	{
+		display: block;
+		text-align: right;
+		font-size: 30px;
+	}	
+	.maindiv
+	{
+		background-size: contain; 
+		padding-bottom: 60px;
+		position: relative;
+	}
+	.menu ul
+	{
+		position: absolute;
+		text-align: center;
+		width:50%;
+		display: none;
+		background-color: white;
+	}
+	.menu ul li
+	{
+		float: none;
+		text-align: right;
+	}
+	li a
+	{
+		display: block;
+		font-size: 12px;
+		font-family: Arial;
+		//margin: 13px;
+		padding: 0;
+		text-align: center;
+
+	}
+	.menu li a
+	{
+		padding: 12px 12px;
+	}
+	.menu li:hover
+	{
+		background-color: red;
+		text-decoration: none;
+	} 
+	.menu li:hover a
+	{
+		color: rgb(122, 38, 22);
+	}
+	.btnquote
+	{
+		width: 60%;
+		 margin-top: 2.7%; 
+		border-radius: 20px 20px; 
+		border-color: black;
+		background-color: #1474;
+		color: rgb(19, 79, 81);
+	}
+	#toggle:checked + .menu ul
+	{
+		display: block;
+	}
+	.slider
+	{
+		font-size: 17px;
+		padding: 0.5%;
+		margin-left: 30%;
+		margin-right: 30%;
+		width: 40%;
+	}
+	.slider p
+	{
+		margin : 1%;
+	}
+	.start
+	{
+		width: 0;
+		margin-left: 0;
+		margin-right: 0;
+		font-size: 0;
+		padding: 0%;
+	}
+	.theme
+	{
+		//margin-left: 3%;
+		padding: 0;
+	}	
+	.theme-heading
+	{
+		font-size: 25px;
+		padding-left: 0;		
+	}
+	.theme-line
+	{
+		margin-left: 10%;
+		width: 60%;
+	}
+	.theme-text
+	{
+		font-size: 15px;
+		margin-top: 5%;
+		padding: 0;
+	}
+	.container
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.container.crousal
+	{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.carousel.slide
+	{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.mobile-app-heading
+	{
+		margin-left: 10%;
+		padding-left: 0;
+		padding-bottom: 1%;
+		color:black;	
+		font-size: 25px;
+		margin-top: 7%;
+	}
+	.mobileapp-line
+	{
+		margin-left: 10%;
+		width: 67%;
+	}
+	.mobileready
+	{
+		width: 100%;
+	}
+	.img 
+	{
+		width:80%;
+		height: 250px;
+		margin: 10%;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5%;
+	}
+	.imgcon
+	{
+		width: 100%;
+		display: unset;
+	}
+	.mobile-app-content
+	{
+		width: 80%;
+		margin: 10%;
+		font-size: 15px;
+		margin-bottom: 0;
+	}
+	.mobile-app-blog
+	{
+		padding-bottom: 0;
+	}
+	.mobile
+	{
+		display: unset;
+		margin: 10%;
+
+	}
+	.mobileready
+	{
+		width: 100%;
+		padding: 0;
+		font-size: 12px;
+		margin: 10%;
+		margin-right: 10%;
+	}
+	.mobile-peragraph
+	{
+		font-size: 15px;
+	}
+	.travel
+	{
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.mobileready-heading
+	{
+		font-weight: bold;
+		font-size: 25px;
+		letter-spacing: 1.7px;
+	}
+	.edit
+	{
+		font-size: 20px;
+	}
+	.features
+	{
+		font-size: 22px;
+	}
+	.fcontent
+	{
+		font-size: 15px;
+		text-align: justify;
+	}
+	.service
+	{
+		flex-direction: column;
+	}
+	.mobile-optimized
+	{
+		width: 100%;
+	}
+	.webdevelopment
+	{
+		width: 100%;
+	}
+	.staf-member
+	{
+		width: 100%;
+	}
+	.cusmoerservice
+	{
+		width: 100%;
+	}
+	.staf-content
+	{
+		font-size: 15px;
+	}
+	.mobileopt
+	{
+		font-size: 15px;	
+	}
+	.developer-content
+	{
+		font-size: 15px;	
+	}
+	.cservice
+	{
+		font-size: 15px;		
+	}
+	.imgservice
+	{
+		margin-top: 6%;
+		width: 20%;
+	}
+	.footer
+	{
+		background-color: black;
+		padding: 5%;
+	}
+	.footer-all-div
+	{
+		flex-direction: column;
+		color: white;
+		padding: 10%;
+	}
+	.footersitediv
+	{
+		width: 100%;
+	}
+	.footre-items a
+	{
+		color: white;
+		font-size: 15px;
+	}
+	.project-text
+	{
+		font-size: 15px;
+	}
+	.footer-heading
+	{
+		font-size: 20px;
+	}
+	.footersitediv
+	{
+		margin-bottom: 10%;
+	}
+	.productdiv
+	{
+		margin-bottom: 10%;
+	}
+	.companydiv
+	{
+		margin-bottom: 10%;
+	}
+	.footer-heading
+	{
+		//text-align: center;
+	}
+	.hrcss
+	{
+		width: 50%;
+		margin-left: 0;
+	}
+	
+	/*-------------------------------------servise page----------------------*/
+	.logocontent
+	{
+		padding-left: 0;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.softweredevlopment
+	{
+		font-size: 22px;
+	}
+	.ProjectbasedSoftware
+	{
+		font-size: 18px;
+		flex-direction: column;
+	}	
+	.projectdescription
+	{
+		flex-direction: column;
+		margin-left: 10%;
+		margin-right: 10%;
+		text-align: justify;
+
+	}
+	#nav-1 ul li
+	{
+		font-size: 15px;	
+	}
+	.project-content
+	{
+		width: 100%;
+		font-size: 15px;
+	}
+	.project-image
+	{
+		width: 50%;
+	}
+	.Softwareteam
+	{
+		font-size: 20px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.software-content
+	{
+		font-size: 15px;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+	.logocontent
+	{
+		flex-direction: column;
+	}
+	.logo
+	{
+		width: 100%;
+		padding: 0;
+	}
+	.contentoflogo
+	{
+		width: 100%;
+	}
+	#softwarebenifits ul
+	{
+		width: 100%;
+		padding: 0;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.heading-dedicated-developer
+	{
+		margin-top: 5%;
+		font-size: 20px;
+	}
+	.dedicated-developer-content
+	{
+		font-size: 15px;
+		text-align: justify;
+	}	
+	.Offshore-development
+	{
+		flex-direction: column;
+	}
+	.offshore-developer-image
+	{
+		width: 100%;
+	}
+	.Offshore-developer-content
+	{
+		width: 100%;
+		font-size: 15px;
+		padding: 0;
+		text-align: justify;
+		margin-right: 10%;
+	}
+	.offsitesoftware
+	{
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+	.offsitesoftware.softwareline
+	{
+		margin-left: 0;
+	}
+	.contact-heading
+	{
+		font-size: 22px;
+	}
+	.contact-detail
+	{
+		flex-direction: column;
+	}
+	.address-first h2
+	{
+		text-align: center;
+		color: black;
+		font-size: 22px;
+	}
+	.address-first p
+	{
+		margin-top: 10%;
+		font-size: 15px;
+		line-height: 1.7;
+	}
+	.address-second-peragraph
+	{
+		margin-top: 15%;
+		font-size: 15px;
+		line-height: 1.7;
+	}
+	.contact-info h1
+	{
+		text-align: center;
+		color: black;
+		font-size: 22px;
+	}
+	.contact-info .contact-email
+	{
+		margin-top: 10%;
+		font-size: 15px;
+	}
+	.button
+	{
+		font-size: 15px;
+	}
+	.about-content
+	{
+		font-size: 15px;
+		text-align: justify;
+	}
+	.heading-of-about
+	{
+		font-size: 22px;
+	}
+	.team-heading
+	{
+		font-size: 20px;
+	}
+	.about-team
+	{
+		flex-direction: column;
+		margin-right: 0;
+		text-align: justify;
+	}
+	.team-description
+	{
+		width: 80%;
+		margin-right: 10%;
+		font-size: 15px;
+	}
+	.team-image
+	{
+		width: 100%;
+		margin-right: 10%;
+		margin-left: 10%;
+		height:50%;
+	}
+	.images-of-team
+	{
+		flex-direction: column;
+		margin-top: 10%;	
+		text-align: center;
+	}
+	.why-different
+	{
+		font-size: 15px;
+		margin-right: 10%;
+		text-align: justify;
+	}
+	.staffheading
+	{
+		font-size: 22px;
+	}
+	.staff-text
+	{
+		font-size: 15px;
+		margin-left: 10%;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+		margin-right: 10%;
+		padding-top:5%;
+	}
+	.staff-benifits-heading h1
+	{
+		font-size: 18px;
+	}
+	#points-staff-benifits-heading ul li
+	{
+		font-size: 15px;
+	}
+	.image-of-staff
+	{
+		height:25	0px;
+	}
+	/*--------------------------------get a free quote------------------*/
+	.heading-of-quote
+	{
+		font-size: 22px;
+	}
+	.abot-esstimate
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.image-of-esstimate
+	{
+		width: 100%;
+		margin: 10%;
+	}
+	.esstimate-image
+	{
+		width: 80%;
+	}
+	.content-of-esstimate
+	{
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 15px;
+		margin-top: 0;
+	}
+	.esstimate
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.project-requirement
+	{
+		width: 100%;
+		font-size: 15px;
+	}
+	.project-cost
+	{
+		width: 100%;
+		font-size: 15px;
+	}
+	.releases
+	{
+		width: 100%;
+		font-size: 15px;
+	}
+	.development-plan
+	{
+		width: 100%;
+		font-size: 15px;	
+	}
+	.esstimate-week
+	{
+		width: 100%;
+		font-size: 15px;	
+	}
+	.stack
+	{
+		width: 100%;
+		font-size: 15px;	
+	}
+	.report
+	{
+		width: 100%;
+		font-size: 15px;	
+	}
+	.goals
+	{
+		width: 100%;
+		font-size: 15px;	
+	}
+	.form-of-class
+	{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.col-md-7.col-sm-10
+	{
+		padding: 0;
+	}
+	.wow.fadeInUp.section-title
+	{
+		margin-left: 10%;
+		margin-bottom: 4%;
+		font-family: Calibri;
+	}
+	.col-md-12.col-sm-12
+	{
+		padding:0;
+	}
+	.col-md-6.col-sm-6
+	{
+		padding: 0;
+	}
+	.col-md-offset-8.col-md-4.col-sm-offset-6.col-sm-6.submitbtn
+	{
+		margin-left: 25%;
+		padding: 0;
+		width: 50%;
+	}

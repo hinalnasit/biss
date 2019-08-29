@@ -1,0 +1,25 @@
+ @media only screen and (max-width: 479px)
+ {
+ .row
+ {
+     display: table;
+    /* content: "";
+     clear: both;*/
+     background-color: pink;
+  }
+  .col-1
+  {
+      float: none;
+      width:95%;
+  }
+  .col-2
+  {
+    float: none;
+    width: 95%;
+  }
+  .col-3
+  {
+    float: none;
+    width: 95%;
+  }
+}

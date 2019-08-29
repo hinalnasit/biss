@@ -1,0 +1,29 @@
+.footer
+{
+	background-color: black;
+	padding: 5%;
+
+}
+.footer-all-div
+{
+	display: flex;
+	justify-content: space-around;
+	color: white;
+}
+.footersitediv
+{
+	width: 20%;
+}
+.footre-items a
+{
+	color: white;
+	font-size: 15px;
+}
+.project-text
+{
+	font-size: 15px;
+}
+.footer-heading
+{
+	font-size: 20px;
+}
